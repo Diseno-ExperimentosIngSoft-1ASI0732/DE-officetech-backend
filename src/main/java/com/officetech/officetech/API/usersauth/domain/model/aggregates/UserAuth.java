@@ -48,7 +48,7 @@ public class UserAuth extends AuditableAbstractAggregateRoot<UserAuth> {
     @Getter
     private String phone;
 
-    protected UserAuth() {}
+    public UserAuth() {}
     public UserAuth(String firstName, String lastName, String email, String password, String role) {
 
         this.firstName = new FirstName(firstName);
